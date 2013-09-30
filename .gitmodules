@@ -1,0 +1,9 @@
+[submodule "app/packages/functionalMeteor"]
+	path = app/packages/functionalMeteor
+	url = git@github.com:jessebmiller/functionalMeteor.git
+[submodule "app/packages/caffeine"]
+	path = app/packages/caffeine
+	url = git@github.com:jessebmiller/caffeine.git
+[submodule "app/packages/tyson"]
+	path = app/packages/tyson
+	url = git@github.com:jessebmiller/tyson.git
