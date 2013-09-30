@@ -1,0 +1,16 @@
+<template name="productDetail">
+  {{# each options }}
+  {{> imageLinkPair }}
+  {{/ each }}
+</template>
+
+<template name="imageLinkPair">
+  <div class="product-option {{ type }}">
+    <img src="{{ image }}">
+    <a href="{{ link }}">Buy on Zazzle</a>
+  </div>
+</template>
+
+<template name="productSummary">
+  <img class="product-preview" src="{{ previewImageUrl }}">
+</template>
