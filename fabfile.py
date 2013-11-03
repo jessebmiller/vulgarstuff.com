@@ -1,10 +1,12 @@
 from fabric.api import *
 from fabric.context_managers import cd, prefix
 
+env.hosts = ['jesse@ec2-54-211-77-172.compute-1.amazonaws.com']
+
 clone = "git clone -o mainline https://github.com/jessebmiller/vulgarstuff.com.git"
 pull = "git pull mainline master"
 push = "git push mainline master"
-test = "echo 'write tests'"
+test = "echo '>>>>>>>>>>>> write some tests sucka <<<<<<<<<<<<'"
 test_path = "tmp_vulgarstuff_test"
 
 def on(branch_name):
@@ -21,6 +23,11 @@ def integrate():
     local(pull)
     local(test)
     local(push)
+
+    # create the test directory
+    # clone mainline
+    # run the tests
+    # delete the test directory
     try:
         run("mkdir {}".format(test_path))
         with cd(test_path):
@@ -30,3 +37,4 @@ def integrate():
         raise e
     finally:
         run("rm -rf {}".format(test_path))
+
