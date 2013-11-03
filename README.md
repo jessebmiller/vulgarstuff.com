@@ -1,4 +1,4 @@
 vulgarstuff.com
 ===============
 
-zazzle backed commerce website.
+Etsy backed commerce website.
