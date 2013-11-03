@@ -1,10 +1,12 @@
 <template name="productDetail">
   <div class="product">
-    <img class="product-preview" src="{{ image }}">
+    <img class="product-image" src="{{ image }}">
     <div class="product-info">
-      <a target="_blank" href="{{ link }}"><h3>Available on Etsy</h3></a>
+      <a class="product-link" target="_blank" href="{{ link }}">
+        <h3>Available on Etsy</h3>
+      </a>
+      <p class="product-description">{{ description }}</p>
     </div>
-    <p class="product-description">{{ description }}</p>
   </div>
 </template>
 
