@@ -11,6 +11,7 @@ lib-cov
 *.gz
 *#
 .DS_Store
+*.pyc
 
 pids
 logs
