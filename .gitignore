@@ -1,3 +1,5 @@
+psds
+pngs
 node_modules
 lib-cov
 *.seed
@@ -7,6 +9,8 @@ lib-cov
 *.out
 *.pid
 *.gz
+*#
+.DS_Store
 
 pids
 logs

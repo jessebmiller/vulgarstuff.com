@@ -1,16 +1,13 @@
 <template name="productDetail">
-  {{# each options }}
-  {{> imageLinkPair }}
-  {{/ each }}
-</template>
-
-<template name="imageLinkPair">
-  <div class="product-option {{ type }}">
-    <img src="{{ image }}">
-    <a href="{{ link }}">Buy on Zazzle</a>
+  <div class="product">
+    <img class="product-preview" src="{{ image }}">
+    <div class="product-info">
+      <a target="_blank" href="{{ link }}"><h3>Available on Etsy</h3></a>
+    </div>
+    <p class="product-description">{{ description }}</p>
   </div>
 </template>
 
-<template name="productSummary">
-  <img class="product-preview" src="{{ previewImageUrl }}">
+<template name="json">
+  {{{ jsonOf this }}}
 </template>
