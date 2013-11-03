@@ -1,7 +1,7 @@
 from fabric.api import *
 from fabric.context_managers import cd, prefix
 
-env.hosts = ['jesse@ec2-54-211-77-172.compute-1.amazonaws.com']
+env.hosts = ['vulgarstuff.com']
 
 clone = "git clone -o mainline https://github.com/jessebmiller/vulgarstuff.com.git"
 pull = "git pull mainline master"
