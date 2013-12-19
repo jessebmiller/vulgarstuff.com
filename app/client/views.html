@@ -2,12 +2,46 @@
   <div class="product">
     <img class="product-image" src="{{ image }}">
     <div class="product-info">
-      <a class="product-link" target="_blank" href="{{ link }}">
-        <h3>Available on Etsy</h3>
+      <h3 class="product-title">{{ title }}</h3>
+      <a class="product-link btn" target="_blank" href="{{ link }}">
+        <h4>Buy on Etsy</h4>
       </a>
       <p class="product-description">{{ description }}</p>
     </div>
   </div>
+</template>
+
+<template name="productAd">
+  <div class="productAd">
+    <h5>{{ title }}</h5>
+    <img class="product-ad-image" src="{{ image }}">
+    <a class="product-link btn" target="_blank" href="{{ link }}">
+      <h4>Buy on Etsy</h4>
+    </a>
+  </div>
+</template>
+
+<template name="youTubeVideoDetail">
+  <div class="you-tube-video content">
+
+    <a href="/you-tube-video/{{ slug }}"><h3>{{ title }}</h3></a>
+    {{> fbButtons }}
+    <p>{{ description }}</p>
+
+    <iframe id="ytplayer" type="text/html" width="640" height="480"
+            src="http://www.youtube.com/embed/{{ videoId }}"
+            frameborder="0"/>
+
+  </div>
+</template>
+
+<template name="fbButtons">
+  <div class="fb-like"
+       data-href="http://vulgarstuff.com/you-tube-video/{{ slug }}"
+       data-layout="standard"
+       data-action="like"
+       data-show-faces="true"
+       data-share="true"></div>
 </template>
 
 <template name="json">

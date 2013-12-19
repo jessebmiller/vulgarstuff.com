@@ -3,11 +3,14 @@
 </head>
 
 <body>
+
+  {{> fbSDK }}
+
   <header>
     <div class="full-width">
-      <h1>Vulgar Stuff</h1>
-      <h2>Beautiful Modern Designs of Vulgar Stuff</h2>
-      <h3>Motherfuckin' awesome</h3>
+      <a href="/">
+        <h1>Vulgar Stuff</h1>
+      </a>
     </div>
   </header>
 
@@ -17,6 +20,7 @@
 
   <footer>
     <div class="full-width">
+      <!-- a href="/shit"><h4>Buy Vulgar Shit</h4></a -->
       <h6>&copy 2013 Vulgar Stuff</h6>
     </div>
   </footer>
@@ -24,4 +28,9 @@
 
 <template name="content">
   {{{ thisView }}}
+</template>
+
+<template name="fbSDK">
+  <div id="fb-root"></div>
+  {{ loadSDK }}
 </template>

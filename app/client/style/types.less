@@ -1,31 +1,38 @@
-html {
-    font-size: 12px;
-}
-
-@product-height: 40em;
+@product-image-height: 500px;
+@product-margin: 90px;
 
 .product {
-    height: @product-height;
-}
-
-.product-image {
-    height: 100%;
-}
-
-.product-link {
-    color: blue;
-}
-
-.product-description {
-    max-width: 400px;
+    font-size: 1.68em;
+    height: @product-image-height;
+    margin-top: @product-margin;
+    margin-bottom: @product-margin;
 }
 
 .product-info {
+    max-width: 900px;
     position: relative;
-    bottom: @product-height;
+    bottom: @product-image-height;
 }
 
-h1 { font-size: 10em;   line-height: .95em; padding: .68em 0; }
-h2 { font-size: 5em;    line-height: .95em; padding: .68em 0; }
-h3 { font-size: 2.5em;  line-height: .95em; padding: .68em 0; }
-h4 { font-size: 1.41em; line-height: .95em; padding: .68em 0; }
+.product-title {
+    margin: 0;
+}
+
+.product-link {
+    color: red;
+    margin: 1.68em 0;
+    line-height: 0;
+}
+
+.product-description {
+    line-height: 1.60em;
+    max-width: 400px;
+}
+
+.product-image {
+    height: @product-image-height;
+}
+
+.you-tube-video {
+    width: 640px;
+}

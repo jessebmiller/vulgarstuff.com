@@ -7,7 +7,12 @@ function registerViews(type, views) {
 Meteor.startup(function () {
     registerViews(Product, {
         view: Template.productDetail,
-        summary: Template.productSummary,
+        productAd: Template.productAd,
+        json: Template.json
+    });
+
+    registerViews(YouTubeVideo, {
+        view: Template.youTubeVideoDetail,
         json: Template.json
     });
 });

@@ -1,12 +1,27 @@
+@contentBackground: white;
+@headFootBackground: black;
+
+@contentColor: black;
+@headFootColor: white;
+@highlightColor: red;
+
 html {
-    background: black;
+    background: @headFootBackground;
 }
 
 header, footer {
-    color: white;
-    background: black;
+    color: @headFootColor;
+    background: @headFootBackground;
 }
 
 .content {
-    background: white;
+    color: @contentColor;
+    background: @contentBackground;
 }
+
+.content a       { color: @contentColor; }
+.content a:hover {color: @highlightColor; text-decoration: none;}
+
+header a,       footer a       { color: @headFootColor; }
+header a:hover, footer a:hover { color: @highlightColor; text-decoration: none;}
+
