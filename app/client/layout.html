@@ -24,6 +24,9 @@
       <h6>&copy 2013 Vulgar Stuff</h6>
     </div>
   </footer>
+
+  {{> googleAnalytics }}
+
 </body>
 
 <template name="content">
@@ -33,4 +36,8 @@
 <template name="fbSDK">
   <div id="fb-root"></div>
   {{ loadSDK }}
+</template>
+
+<template name="googleAnalytics">
+  {{ loadGoog }}
 </template>
