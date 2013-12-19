@@ -7,8 +7,8 @@ var fullSummary = function () {
 };
 
 var youTubeVideo = function (slug) {
-    Session.set("view", "productAd");
-    return [YouTubeVideos.findOne({slug: slug})];
+    
+    return YouTubeVideos.findOne({slug: slug}) || [];
 };
 
 var products = function () {
